@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "description": "Vanilla JS web components",
   "github_username": "git_username",
-  "git_repository_name": "{{ cookiecutter.package_name }}",
   "author": "Your name",
   "license": "MIT"
 }
