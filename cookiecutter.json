@@ -2,7 +2,7 @@
   "package_name": "web-components",
   "version": "0.1.0",
   "description": "Vanilla JS web components",
-  "git_username": "git_username",
+  "github_username": "git_username",
   "git_repository_name": "{{ cookiecutter.package_name }}",
   "author": "Your name",
   "license": "MIT"
