@@ -14,5 +14,8 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/{{ cookiecutter.package_name }}"
+  },
+  "{{ cookiecutter.package_name.lower().replace('-', '_') }}": {
+    "port": {{ cookiecutter.test_server_port }}
   }
 }
