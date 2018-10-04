@@ -2,6 +2,8 @@
   "package_name": "web-components",
   "version": "0.1.0",
   "description": "Vanilla JS web components",
+  "component_directory": "hello_world",
+  "component_class_name": "HelloWorld",
   "github_username": "git_username",
   "author": "your name",
   "license": "MIT",
