@@ -4,8 +4,9 @@
   "description": "{{ cookiecutter.description }}",
   "main": "index.js",
   "scripts": {
-    "test": "node test_runner.js",
-    "test:watch": "node test_runner.js --watch",
+    "build": "npx webpack --config webpack/webpack.config.production.js",
+    "build:dev": "npx webpack --config webpack.config.developmemnt.js",
+    "test": "npm run build & node test_runner.js",
     "lint": "npx eslint src/ webpack/ test_runner.js",
     "lint:fix": "npx eslint --fix src/ webpack/ test_runner.js"
   },
