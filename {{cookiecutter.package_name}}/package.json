@@ -4,6 +4,7 @@
   "description": "{{ cookiecutter.description }}",
   "main": "index.js",
   "scripts": {
+    "start": "webpack-dev-server --config webpack/webpack.config.development.js",
     "build": "webpack --config webpack/webpack.config.production.js",
     "build:dev": "webpack --config webpack/webpack.config.development.js",
     "test": "npm run build & jest",
