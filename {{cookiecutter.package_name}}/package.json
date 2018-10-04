@@ -4,19 +4,16 @@
   "description": "{{ cookiecutter.description }}",
   "main": "index.js",
   "scripts": {
-    "build": "npx webpack --config webpack/webpack.config.production.js",
-    "build:dev": "npx webpack --config webpack.config.developmemnt.js",
-    "test": "npm run build & node test_runner.js",
-    "lint": "npx eslint src/ webpack/ test_runner.js",
-    "lint:fix": "npx eslint --fix src/ webpack/ test_runner.js"
+    "build": "webpack --config webpack/webpack.config.production.js",
+    "build:dev": "webpack --config webpack.config.developmemnt.js",
+    "test": "npm run build & jest",
+    "lint": "eslint src/ webpack/",
+    "lint:fix": "eslint --fix src/ webpack/"
   },
   "author": "{{ cookiecutter.author }}",
   "license": "{{ cookiecutter.license }}",
   "repository": {
     "type": "git",
     "url": "https://github.com/{{ cookiecutter.package_name }}"
-  },
-  "{{ cookiecutter.package_name.lower().replace('-', '_') }}": {
-    "port": {{ cookiecutter.test_server_port }}
   }
 }
