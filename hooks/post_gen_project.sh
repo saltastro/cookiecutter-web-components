@@ -2,10 +2,11 @@
 
 npm install --save-dev \
         jest \
-        babel-jest \
         babel-core@^7.0.0-bridge.0 \
         @babel/core \
         @babel/preset-env \
+        babel-loader \
+        babel-jest \
         regenerator-runtime \
         eslint \
         eslint-config-standard \
@@ -18,4 +19,5 @@ npm install --save-dev \
         jest-puppeteer \
         express \
         webpack \
+        webpack-cli \
         webpack-merge
