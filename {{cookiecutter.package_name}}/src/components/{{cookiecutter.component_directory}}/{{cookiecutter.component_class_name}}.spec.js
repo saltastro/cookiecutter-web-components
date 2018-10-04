@@ -14,6 +14,6 @@ describe('{{ cookiecutter.component_class_name }}', () => {
   })
 
   it('should work', async () => {
-    await expect(page).toMatch('Hello World');
+    await expect(page).toMatch('Hello World')
   })
 })
