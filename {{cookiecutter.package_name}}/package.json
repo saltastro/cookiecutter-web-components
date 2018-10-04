@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack --config webpack/webpack.config.production.js",
-    "build:dev": "webpack --config webpack.config.developmemnt.js",
+    "build:dev": "webpack --config webpack/webpack.config.development.js",
     "test": "npm run build & jest",
     "lint": "eslint src/ webpack/",
     "lint:fix": "eslint --fix src/ webpack/"
