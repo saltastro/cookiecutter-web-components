@@ -9,7 +9,8 @@
     "build:dev": "webpack --config webpack/webpack.config.development.js",
     "test": "npm run build & jest",
     "lint": "eslint src/ webpack/",
-    "lint:fix": "eslint --fix src/ webpack/"
+    "lint:fix": "eslint --fix src/ webpack/",
+    "docs": "mkdocs build"
   },
   "author": "{{ cookiecutter.author }}",
   "license": "{{ cookiecutter.license }}",
