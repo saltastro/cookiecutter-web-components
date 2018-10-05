@@ -13,9 +13,9 @@
     "docs": "mkdocs build"
   },
   "author": "{{ cookiecutter.author }}",
-  "license": "{{ cookiecutter.license }}",
+  "license": "{{ cookiecutter.license }}"{% if cookiecutter.github_username %},
   "repository": {
     "type": "git",
-    "url": "https://github.com/{{ cookiecutter.package_name }}"
-  }
+    "url": "https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.package_name }}"
+  }{% endif %}
 }
