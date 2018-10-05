@@ -8,7 +8,7 @@ const content = `<!DOCTYPE html>
 </body>
 </html>`
 
-describe('{{ cookiecutter.component_class_name }}', () => {
+describe('{{ cookiecutter.component_class }}', () => {
   beforeAll(async () => {
     await page.goto(`data:text/html,${content}`)
   })
