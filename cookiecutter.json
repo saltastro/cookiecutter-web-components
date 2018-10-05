@@ -4,7 +4,7 @@
   "description": "Vanilla JS web components",
   "component_tag": "hello-world",
   "component_directory": "{{ cookiecutter.component_tag }}",
-  "component_class_name": "HelloWorld",
+  "component_class": "HelloWorld",
   "github_username": "git_username",
   "author": "your name",
   "license": "MIT",
