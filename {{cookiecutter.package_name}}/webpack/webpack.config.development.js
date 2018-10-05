@@ -25,6 +25,10 @@ module.exports = merge(baseConfig, {
 
   devtool: 'cheap-module-source-map',
 
+  devServer: {
+    port: {{ cookiecutter.test_server_port }}
+  },
+
   plugins: [
     new MiniHtmlWebpackPlugin({
       template: html
