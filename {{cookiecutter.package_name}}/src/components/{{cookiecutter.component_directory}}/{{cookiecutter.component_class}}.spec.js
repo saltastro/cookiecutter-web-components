@@ -1,16 +1,10 @@
-const content = `<!DOCTYPE html>
-<html>
-<head>
-<script src="http://localhost:{{ cookiecutter.test_server_port }}/web-components.js"></script>
-</head>
-<body>
-<hello-world></hello-world>
-</body>
-</html>`
+import testHtml from '../../util/test-html'
+
+const body = '<{{ cookiecutter.component_tag }}></{{ cookiecutter.component_tag }}>'
 
 describe('{{ cookiecutter.component_class }}', () => {
   beforeAll(async () => {
-    await page.goto(`data:text/html,${content}`)
+    await page.goto(`data:text/html, ${testHtml(body)}`)
   })
 
   it('should work', async () => {
