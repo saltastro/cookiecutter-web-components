@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# include license filre only if MIT license is chosen
+# include license file only if MIT license is chosen
 
 if [ "MIT" != "{{ cookiecutter.license }}" ]
 then
