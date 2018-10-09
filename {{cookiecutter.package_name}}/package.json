@@ -2,7 +2,11 @@
   "name": "{{ cookiecutter.package_name }}",
   "version": "{{ cookiecutter.version }}",
   "description": "{{ cookiecutter.description }}",
-  "main": "index.js",
+  "main": "dist/{{ cookiecutter.package_name }}.js",
+  "files": [
+    "dist"
+  ],
+  "unpkg": "dist/{{ cookiecutter.package_name }}.js",
   "scripts": {
     "start": "webpack-dev-server --config webpack/webpack.config.development.js",
     "build": "webpack --config webpack/webpack.config.production.js",
